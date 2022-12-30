@@ -8,11 +8,11 @@ minimumMasterNodes: 1
 # Allocate smaller chunks of memory per pod.
 resources:
   requests:
-    cpu: "100m"
-    memory: "512M"
+    cpu: "300m"
+    memory: "1Gi"
   limits:
     cpu: "1000m"
-    memory: "512M"
+    memory: "2Gi"
 
 # To allocate more space if above requests and limits aren't enough
 # resources:
