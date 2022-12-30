@@ -8,5 +8,5 @@ def connect_to_es_cluster(es_host):
         print('Could not connect!')
 
 
-connect_to_es_cluster(es_host='10.43.57.223') # cluster ip of the elasticsearch cluster deployed inside k8s
+connect_to_es_cluster(es_host='http://10.43.57.223:9200') # cluster ip of the elasticsearch cluster deployed inside k8s
 
