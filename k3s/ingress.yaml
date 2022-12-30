@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /es
+        pathType: Prefix
+        backend:
+          service:
+            name: es-svc
+            port:
+              number: 80
+      - path: /kib
+        pathType: Prefix
+        backend:
+          service:
+            name: kib-svc
+            port:
+              number: 80
