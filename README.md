@@ -1,5 +1,7 @@
 # Deployment of ELK stack on K3s or in general - Kubernetes
 
+WIP
+
 ## Prerequisites:
 * A K8s/K3s cluster. 
 * Helm
