@@ -14,14 +14,14 @@ helm repo add elastic https://Helm.elastic.co
 ```
 
 ```bash
-helm install elasticsearch elastic/elasticsearch -f elasticsearch_value_override.yaml
+helm install elasticsearch elastic/elasticsearch -f k3s/elasticsearch_value_override.yaml
 ```
 
 
 ## Kibana
 
 ```bash
-helm install kibana elastic/kibana -f kibana_value_override.yaml
+helm install kibana elastic/kibana -f k3s/kibana_value_override.yaml
 ```
 
 ## FluentD
