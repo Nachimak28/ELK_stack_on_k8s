@@ -24,5 +24,13 @@ helm install elasticsearch elastic/elasticsearch -f elasticsearch_value_override
 helm install kibana elastic/kibana -f kibana_value_override.yaml
 ```
 
-## Logstash
+## FluentD
+
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+```
+
+```bash
+helm install fluentd bitnami/fluentd
+```
 
